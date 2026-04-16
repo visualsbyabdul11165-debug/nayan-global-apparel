@@ -1,1 +1,305 @@
-x
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Us | Nayan Global & Apparel</title>
+<meta name="description" content="Learn about Nayan Global & Apparel — a premium clothing manufacturer based in Sialkot, Pakistan with 15+ years of experience supplying top fashion brands worldwide.">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,600;0,700;1,400&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--fuch:#E8005A;--fuch-lt:#FF3080;--gold:#C9922A;--gold-lt:#F0B84A;--navy:#0A0E1A;--ink:#12162A;--off:#F7F5F0;--mid:#8C8A98;--border:rgba(0,0,0,.08);}
+*{margin:0;padding:0;box-sizing:border-box;}body{font-family:'Outfit',sans-serif;font-weight:300;background:#fff;color:var(--ink);}
+nav{background:rgba(255,255,255,.97);backdrop-filter:blur(16px);border-bottom:1px solid var(--border);padding:0 72px;display:flex;align-items:center;justify-content:space-between;height:72px;position:sticky;top:0;z-index:100;box-shadow:0 2px 20px rgba(0,0,0,.06);}
+.logo .mono{font-family:'Cormorant Garamond',serif;font-size:28px;font-weight:600;color:var(--ink);}
+.logo .mono .amp{color:var(--gold);font-style:italic;}
+.logo .sub{font-size:9px;letter-spacing:.28em;text-transform:uppercase;color:var(--mid);margin-top:2px;}
+.nl{display:flex;align-items:center;gap:28px;list-style:none;}
+.nl a{color:var(--ink);text-decoration:none;font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;font-weight:500;transition:color .2s;}
+.nl a:hover,.nl a.active{color:var(--fuch);}
+.nl .cta{background:var(--fuch);color:#fff!important;padding:10px 22px;font-weight:700!important;}
+/* HERO */
+.about-hero{background:var(--navy);padding:100px 72px;position:relative;overflow:hidden;}
+.about-hero::before{content:'ABOUT';position:absolute;font-family:'Cormorant Garamond',serif;font-size:220px;font-weight:700;color:rgba(255,255,255,.025);top:50%;left:50%;transform:translate(-50%,-50%);white-space:nowrap;pointer-events:none;}
+.ah-inner{position:relative;z-index:2;max-width:700px;}
+.eyetag{font-size:10px;letter-spacing:.3em;text-transform:uppercase;color:var(--fuch);margin-bottom:18px;display:flex;align-items:center;gap:12px;}
+.eyetag::before{content:'';width:28px;height:2px;background:var(--fuch);}
+h1{font-family:'Cormorant Garamond',serif;font-size:clamp(52px,6vw,80px);font-weight:600;color:#fff;line-height:.95;margin-bottom:24px;}
+h1 em{color:var(--gold-lt);font-style:italic;font-weight:300;display:block;}
+.hero-p{font-size:16px;color:rgba(255,255,255,.5);line-height:1.8;max-width:500px;}
+/* STATS */
+.stats-bar{background:var(--fuch);padding:32px 72px;display:flex;gap:0;}
+.stat{flex:1;text-align:center;border-right:1px solid rgba(255,255,255,.15);padding:8px 20px;}
+.stat:last-child{border-right:none;}
+.stat-n{font-family:'Cormorant Garamond',serif;font-size:44px;font-weight:600;color:#fff;line-height:1;}
+.stat-l{font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:rgba(255,255,255,.65);margin-top:4px;}
+/* STORY */
+.story{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center;padding:100px 72px;background:#fff;}
+.story-img{position:relative;aspect-ratio:4/5;overflow:hidden;}
+.story-img img{width:100%;height:100%;object-fit:cover;}
+.story-img::after{content:'';position:absolute;bottom:0;left:0;right:0;height:40%;background:linear-gradient(transparent,rgba(10,14,26,.5));}
+.story-img .year-badge{position:absolute;bottom:28px;left:28px;z-index:2;background:var(--fuch);color:#fff;padding:12px 20px;}
+.year-badge .yn{font-family:'Cormorant Garamond',serif;font-size:38px;font-weight:700;line-height:1;}
+.year-badge .yl{font-size:9px;letter-spacing:.2em;text-transform:uppercase;opacity:.8;}
+h2{font-family:'Cormorant Garamond',serif;font-size:clamp(36px,4vw,52px);font-weight:600;color:var(--ink);line-height:1.05;margin-bottom:20px;}
+h2 em{color:var(--fuch);font-style:italic;}
+.story-text p{font-size:14px;color:var(--mid);line-height:1.85;margin-bottom:20px;}
+/* VALUES */
+.values{background:var(--off);padding:100px 72px;}
+.values-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:3px;margin-top:56px;}
+.val-card{background:#fff;padding:40px 32px;position:relative;overflow:hidden;transition:transform .3s;}
+.val-card:hover{transform:translateY(-6px);}
+.val-card::before{content:'';position:absolute;top:0;left:0;width:100%;height:3px;background:linear-gradient(to right,var(--fuch),var(--gold-lt));transform:scaleX(0);transform-origin:left;transition:transform .4s;}
+.val-card:hover::before{transform:scaleX(1);}
+.val-icon{font-size:36px;margin-bottom:20px;}
+.val-title{font-family:'Cormorant Garamond',serif;font-size:24px;font-weight:600;color:var(--ink);margin-bottom:12px;}
+.val-desc{font-size:13px;color:var(--mid);line-height:1.75;}
+/* TEAM */
+.team{padding:100px 72px;background:#fff;}
+.team-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:32px;margin-top:56px;}
+.team-card{text-align:center;}
+.team-img{width:160px;height:160px;border-radius:50%;overflow:hidden;margin:0 auto 20px;background:var(--off);border:3px solid var(--off);transition:border-color .3s;}
+.team-card:hover .team-img{border-color:var(--fuch);}
+.team-img img{width:100%;height:100%;object-fit:cover;}
+.team-name{font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:600;color:var(--ink);margin-bottom:4px;}
+.team-role{font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--fuch);margin-bottom:10px;}
+.team-bio{font-size:12.5px;color:var(--mid);line-height:1.7;}
+/* CERTIFICATIONS */
+.certs{background:var(--navy);padding:80px 72px;}
+.cert-grid{display:flex;flex-wrap:wrap;gap:20px;margin-top:48px;}
+.cert{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);padding:24px 32px;display:flex;align-items:center;gap:16px;transition:background .3s;}
+.cert:hover{background:rgba(255,255,255,.09);}
+.cert-icon{font-size:32px;}
+.cert-name{font-size:13px;font-weight:600;color:#fff;}
+.cert-desc{font-size:11.5px;color:rgba(255,255,255,.45);margin-top:3px;}
+/* CTA */
+.about-cta{padding:100px 72px;background:var(--off);display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:32px;}
+/* FOOTER */
+footer{background:var(--navy);color:rgba(255,255,255,.4);padding:56px 72px 32px;}
+.ftop{display:grid;grid-template-columns:1.8fr 1fr 1fr 1fr;gap:48px;margin-bottom:48px;}
+.fb .mono{font-family:'Cormorant Garamond',serif;font-size:28px;font-weight:600;color:#fff;}
+.fb .amp{color:var(--gold-lt);font-style:italic;}
+.fb .sub{font-size:9px;letter-spacing:.28em;text-transform:uppercase;color:rgba(255,255,255,.3);margin-top:3px;}
+.fb p{font-size:12.5px;color:rgba(255,255,255,.35);line-height:1.75;margin-top:16px;}
+.fc h4{font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:rgba(255,255,255,.45);margin-bottom:18px;}
+.fc ul{list-style:none;}
+.fc ul li{margin-bottom:10px;}
+.fc ul li a{color:rgba(255,255,255,.3);text-decoration:none;font-size:13px;transition:color .2s;}
+.fc ul li a:hover{color:#fff;}
+.fbot{border-top:1px solid rgba(255,255,255,.06);padding-top:24px;display:flex;align-items:center;justify-content:space-between;font-size:11.5px;flex-wrap:wrap;gap:12px;}
+.fleg{display:flex;gap:20px;}
+.fleg a{color:rgba(255,255,255,.25);text-decoration:none;font-size:11px;transition:color .2s;}
+.fleg a:hover{color:rgba(255,255,255,.6);}
+/* WA */
+.wa-float{position:fixed;bottom:28px;right:28px;z-index:9999;width:58px;height:58px;background:#25D366;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 6px 24px rgba(37,211,102,.45);cursor:pointer;text-decoration:none;animation:wapulse 2.5s ease infinite;font-size:26px;}
+@keyframes wapulse{0%,100%{box-shadow:0 6px 24px rgba(37,211,102,.45),0 0 0 0 rgba(37,211,102,.3)}50%{box-shadow:0 6px 24px rgba(37,211,102,.45),0 0 0 12px rgba(37,211,102,0)}}
+.btt{position:fixed;bottom:100px;right:30px;z-index:9998;width:42px;height:42px;background:var(--navy);border:1.5px solid rgba(255,255,255,.15);color:#fff;display:flex;align-items:center;justify-content:center;cursor:pointer;font-size:18px;opacity:0;pointer-events:none;transition:all .3s;}
+.btt.vis{opacity:1;pointer-events:all;}
+/* RESPONSIVE */
+@media(max-width:900px){
+  nav{padding:0 24px;}.nl{display:none;}
+  .about-hero,.story,.values,.team,.certs,.about-cta{padding:64px 36px!important;}
+  .stats-bar{padding:24px 36px;flex-wrap:wrap;}
+  .story{grid-template-columns:1fr!important;}
+  .values-grid,.team-grid{grid-template-columns:1fr 1fr!important;}
+  .ftop{grid-template-columns:1fr 1fr!important;}
+}
+@media(max-width:640px){
+  .about-hero,.story,.values,.team,.certs,.about-cta{padding:48px 20px!important;}
+  .values-grid,.team-grid{grid-template-columns:1fr!important;}
+  .stats-bar{flex-direction:column;gap:16px;padding:28px 20px;}
+  .stat{border-right:none;border-bottom:1px solid rgba(255,255,255,.1);padding-bottom:16px;}
+  .ftop{grid-template-columns:1fr!important;}
+}
+body{animation:fadeIn .4s ease;}
+@keyframes fadeIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="logo"><div class="mono">N<span class="amp">&amp;</span>A</div><div class="sub">Global &amp; Apparel</div></div>
+  <ul class="nl">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="products.html">Products</a></li>
+    <li><a href="about.html" class="active">About</a></li>
+    <li><a href="index.html#process">Process</a></li>
+    <li><a href="index.html#contact" class="cta">Get a Quote</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="about-hero">
+  <div class="ah-inner">
+    <div class="eyetag">Our Story</div>
+    <h1>Made in Pakistan.<br><em>Worn Worldwide.</em></h1>
+    <p class="hero-p">For over 15 years, Nayan Global &amp; Apparel has been the manufacturing backbone behind some of the world's most recognised fashion brands — delivering quality, consistency and craftsmanship from our home in Sialkot, Pakistan.</p>
+  </div>
+</section>
+
+<!-- STATS BAR -->
+<div class="stats-bar">
+  <div class="stat"><div class="stat-n">15+</div><div class="stat-l">Years in Business</div></div>
+  <div class="stat"><div class="stat-n">2K+</div><div class="stat-l">Happy Clients</div></div>
+  <div class="stat"><div class="stat-n">500+</div><div class="stat-l">Styles Produced</div></div>
+  <div class="stat"><div class="stat-n">50+</div><div class="stat-l">Countries Served</div></div>
+  <div class="stat"><div class="stat-n">10M+</div><div class="stat-l">Garments Shipped</div></div>
+</div>
+
+<!-- OUR STORY -->
+<section class="story">
+  <div class="story-img">
+    <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=700&h=875&fit=crop&q=85" alt="Nayan Global Apparel factory">
+    <div class="year-badge"><div class="yn">2009</div><div class="yl">Founded</div></div>
+  </div>
+  <div class="story-text">
+    <div class="eyetag" style="font-size:10px;letter-spacing:.3em;text-transform:uppercase;color:var(--fuch);margin-bottom:18px;display:flex;align-items:center;gap:12px;"><span style="width:28px;height:2px;background:var(--fuch);display:inline-block;"></span>Who We Are</div>
+    <h2>Built on Craft,<br>Driven by <em>Quality</em></h2>
+    <p>Nayan Global &amp; Apparel was founded in Sialkot, Pakistan — a city with a centuries-old legacy of exceptional textile manufacturing. What started as a small workshop serving local markets has grown into a full-scale B2B manufacturing operation trusted by leading retailers across the UK, Europe, the US and beyond.</p>
+    <p>We specialise in producing premium T-shirts, hoodies, shorts, and activewear for fashion brands, retailers, and wholesalers. Every garment we make is a reflection of our obsession with quality — from the thread count to the final folded product ready for retail.</p>
+    <p>Our clients range from independent streetwear labels placing their first 50-piece order to established retailers sourcing 50,000+ units per season. We treat every order with the same level of care and precision.</p>
+    <div style="display:flex;gap:14px;margin-top:32px;flex-wrap:wrap;">
+      <a href="index.html#contact" style="background:var(--fuch);color:#fff;padding:14px 32px;font-family:'Outfit',sans-serif;font-size:11px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;text-decoration:none;">Work With Us →</a>
+      <a href="products.html" style="background:transparent;color:var(--ink);border:1.5px solid var(--border);padding:14px 32px;font-family:'Outfit',sans-serif;font-size:11px;font-weight:500;letter-spacing:.18em;text-transform:uppercase;text-decoration:none;">View Products</a>
+    </div>
+  </div>
+</section>
+
+<!-- VALUES -->
+<section class="values">
+  <div style="text-align:center;max-width:560px;margin:0 auto;">
+    <div class="eyetag" style="font-size:10px;letter-spacing:.3em;text-transform:uppercase;color:var(--fuch);margin-bottom:14px;display:flex;align-items:center;justify-content:center;gap:12px;"><span style="width:28px;height:2px;background:var(--fuch);display:inline-block;"></span>Our Values<span style="width:28px;height:2px;background:var(--fuch);display:inline-block;"></span></div>
+    <h2>What We <em>Stand For</em></h2>
+    <p style="font-size:14px;color:var(--mid);margin-top:14px;line-height:1.75;">Everything we do is guided by a simple principle — make garments we'd be proud to wear ourselves.</p>
+  </div>
+  <div class="values-grid">
+    <div class="val-card">
+      <div class="val-icon">🎯</div>
+      <div class="val-title">Uncompromising Quality</div>
+      <div class="val-desc">Every garment undergoes a rigorous multi-stage inspection process. We reject anything that doesn't meet our strict standards — before it ever reaches you.</div>
+    </div>
+    <div class="val-card">
+      <div class="val-icon">🤝</div>
+      <div class="val-title">Partnership Mindset</div>
+      <div class="val-desc">We don't just manufacture for clients — we build long-term partnerships. Your success is our success, and we invest in understanding your brand's vision.</div>
+    </div>
+    <div class="val-card">
+      <div class="val-icon">⚡</div>
+      <div class="val-title">Reliable Lead Times</div>
+      <div class="val-desc">Fashion moves fast. Our streamlined production process ensures you receive your order on schedule, every time — with full transparency throughout.</div>
+    </div>
+    <div class="val-card">
+      <div class="val-icon">🌱</div>
+      <div class="val-title">Sustainable Practices</div>
+      <div class="val-desc">We offer GOTS-certified organic cotton, recycled fabrics, and eco-friendly packaging options for brands that care about their environmental impact.</div>
+    </div>
+    <div class="val-card">
+      <div class="val-icon">🏷️</div>
+      <div class="val-title">True Private Label</div>
+      <div class="val-desc">From woven labels to custom hangtags, we handle every branding detail. Your customers will never know who made it — only that it's exceptional.</div>
+    </div>
+    <div class="val-card">
+      <div class="val-icon">🌍</div>
+      <div class="val-title">Global Reach</div>
+      <div class="val-desc">With logistics partners in 50+ countries, we ship door-to-door anywhere in the world. DDP, FOB, CIF — whatever terms work best for your business.</div>
+    </div>
+  </div>
+</section>
+
+<!-- CAPABILITIES -->
+<section style="background:#fff;padding:100px 72px;">
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:center;">
+    <div>
+      <div class="eyetag" style="font-size:10px;letter-spacing:.3em;text-transform:uppercase;color:var(--fuch);margin-bottom:14px;display:flex;align-items:center;gap:12px;"><span style="width:28px;height:2px;background:var(--fuch);display:inline-block;"></span>Our Capabilities</div>
+      <h2>Full-Service<br><em>Manufacturing</em></h2>
+      <p style="font-size:14px;color:var(--mid);line-height:1.8;margin-top:16px;margin-bottom:32px;">From a single sample to a 100,000-unit production run, our factory in Sialkot handles every step in-house — no outsourcing, no middlemen.</p>
+      <div style="display:flex;flex-direction:column;gap:16px;">
+        <div style="display:flex;gap:16px;align-items:flex-start;padding:20px;background:var(--off);">
+          <span style="font-size:24px;flex-shrink:0;">✂️</span>
+          <div><div style="font-weight:600;font-size:14px;margin-bottom:4px;">Pattern Making &amp; Sampling</div><div style="font-size:12.5px;color:var(--mid);">Custom patterns from your tech packs or our in-house design team. Samples delivered in 7–10 days.</div></div>
+        </div>
+        <div style="display:flex;gap:16px;align-items:flex-start;padding:20px;background:var(--off);">
+          <span style="font-size:24px;flex-shrink:0;">🧵</span>
+          <div><div style="font-weight:600;font-size:14px;margin-bottom:4px;">Fabric Sourcing &amp; Dyeing</div><div style="font-size:12.5px;color:var(--mid);">Direct relationships with premium mills. Cotton, polyester, fleece, spandex blends — all in-house dyeing.</div></div>
+        </div>
+        <div style="display:flex;gap:16px;align-items:flex-start;padding:20px;background:var(--off);">
+          <span style="font-size:24px;flex-shrink:0;">🖨️</span>
+          <div><div style="font-weight:600;font-size:14px;margin-bottom:4px;">Printing &amp; Embroidery</div><div style="font-size:12.5px;color:var(--mid);">Screen print, DTG, heat transfer, embroidery, woven patches — all decoration in-house.</div></div>
+        </div>
+        <div style="display:flex;gap:16px;align-items:flex-start;padding:20px;background:var(--off);">
+          <span style="font-size:24px;flex-shrink:0;">📦</span>
+          <div><div style="font-weight:600;font-size:14px;margin-bottom:4px;">Packing &amp; Fulfilment</div><div style="font-size:12.5px;color:var(--mid);">Retail-ready packaging, custom hangtags, polybag &amp; carton packing. Shipped DDP worldwide.</div></div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=700&h=860&fit=crop&q=85" alt="Manufacturing capabilities" style="width:100%;height:auto;display:block;">
+    </div>
+  </div>
+</section>
+
+<!-- CERTIFICATIONS -->
+<section class="certs">
+  <div class="eyetag" style="font-size:10px;letter-spacing:.3em;text-transform:uppercase;color:var(--fuch);margin-bottom:14px;display:flex;align-items:center;gap:12px;"><span style="width:28px;height:2px;background:var(--fuch);display:inline-block;"></span>Quality &amp; Compliance</div>
+  <h2 style="font-family:'Cormorant Garamond',serif;font-size:clamp(32px,4vw,48px);font-weight:600;color:#fff;">Certified &amp; <em style="color:var(--gold-lt);font-style:italic;">Compliant</em></h2>
+  <p style="font-size:14px;color:rgba(255,255,255,.4);margin-top:14px;max-width:520px;line-height:1.75;">We meet the compliance standards required by major international retailers and brands.</p>
+  <div class="cert-grid">
+    <div class="cert"><div class="cert-icon">🌿</div><div><div class="cert-name">OEKO-TEX® Standard 100</div><div class="cert-desc">All fabrics tested for harmful substances</div></div></div>
+    <div class="cert"><div class="cert-icon">♻️</div><div><div class="cert-name">GOTS Organic Cotton Available</div><div class="cert-desc">Global Organic Textile Standard</div></div></div>
+    <div class="cert"><div class="cert-icon">🏭</div><div><div class="cert-name">ISO 9001:2015</div><div class="cert-desc">Quality management systems certified</div></div></div>
+    <div class="cert"><div class="cert-icon">⚖️</div><div><div class="cert-name">BSCI Audited</div><div class="cert-desc">Business Social Compliance Initiative</div></div></div>
+    <div class="cert"><div class="cert-icon">🔒</div><div><div class="cert-name">SEDEX Member</div><div class="cert-desc">Ethical supply chain verified</div></div></div>
+    <div class="cert"><div class="cert-icon">🌎</div><div><div class="cert-name">REACH Compliant</div><div class="cert-desc">EU chemical safety regulation</div></div></div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="about-cta">
+  <div>
+    <h2 style="font-family:'Cormorant Garamond',serif;font-size:clamp(32px,4vw,52px);font-weight:600;color:var(--ink);line-height:1.05;">Ready to work<br>with <em style="color:var(--fuch);font-style:italic;">us?</em></h2>
+    <p style="font-size:14px;color:var(--mid);margin-top:14px;max-width:440px;line-height:1.75;">Start with a free quote. Tell us what you need and we'll have a response within 24 hours.</p>
+  </div>
+  <div style="display:flex;gap:14px;flex-wrap:wrap;">
+    <a href="index.html#contact" style="background:var(--fuch);color:#fff;padding:16px 40px;font-family:'Outfit',sans-serif;font-size:11.5px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;text-decoration:none;box-shadow:0 8px 28px rgba(232,0,90,.3);">Get a Free Quote →</a>
+    <a href="products.html" style="background:transparent;color:var(--ink);border:1.5px solid var(--border);padding:16px 40px;font-family:'Outfit',sans-serif;font-size:11.5px;font-weight:500;letter-spacing:.2em;text-transform:uppercase;text-decoration:none;">Browse Products</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="ftop">
+    <div class="fb">
+      <div class="mono">N<span class="amp">&amp;</span>A</div><div class="sub">Global &amp; Apparel</div>
+      <p>Premium clothing manufacturer based in Sialkot, Pakistan. Supplying top fashion brands &amp; retailers across 50+ countries.</p>
+      <div style="display:flex;gap:14px;margin-top:16px;">
+        <a href="https://instagram.com/nayanglobalapparel" target="_blank" style="color:rgba(255,255,255,.4);font-size:11px;text-decoration:none;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='rgba(255,255,255,.4)'">Instagram</a>
+        <a href="https://linkedin.com/company/nayan-global-apparel" target="_blank" style="color:rgba(255,255,255,.4);font-size:11px;text-decoration:none;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='rgba(255,255,255,.4)'">LinkedIn</a>
+        <a href="https://wa.me/447700900123" target="_blank" style="color:rgba(255,255,255,.4);font-size:11px;text-decoration:none;" onmouseover="this.style.color='#25D366'" onmouseout="this.style.color='rgba(255,255,255,.4)'">WhatsApp</a>
+      </div>
+    </div>
+    <div class="fc"><h4>Collections</h4><ul>
+      <li><a href="products.html">T-Shirts &amp; Tops</a></li>
+      <li><a href="products.html">Hoodies &amp; Sweatshirts</a></li>
+      <li><a href="products.html">Shorts &amp; Bottoms</a></li>
+      <li><a href="products.html">Activewear</a></li>
+    </ul></div>
+    <div class="fc"><h4>Company</h4><ul>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="index.html#process">Our Process</a></li>
+      <li><a href="index.html#catalog">Catalogs</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul></div>
+    <div class="fc"><h4>Get In Touch</h4><ul>
+      <li><a href="mailto:info@nayanglobalapparel.com">info@nayanglobalapparel.com</a></li>
+      <li><a href="tel:+447700900123">+44 7700 900123</a></li>
+      <li><a href="https://wa.me/447700900123" target="_blank">WhatsApp Us</a></li>
+      <li><a href="index.html#contact">Request a Quote</a></li>
+    </ul></div>
+  </div>
+  <div class="fbot"><span>© 2025 Nayan Global &amp; Apparel. All rights reserved.</span><div class="fleg"><a href="#">Privacy Policy</a><a href="#">Terms</a></div></div>
+</footer>
+
+<a href="https://wa.me/447700900123" class="wa-float" target="_blank">💬</a>
+<button class="btt" id="btt" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+<script>window.addEventListener('scroll',function(){var b=document.getElementById('btt');if(b)b.classList.toggle('vis',window.scrollY>400);});</script>
+</body>
+</html>

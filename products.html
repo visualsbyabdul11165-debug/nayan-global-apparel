@@ -1,0 +1,1000 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+  <meta name="description" content="Browse Nayan Global & Apparel's full collection — T-Shirts, Hoodies, Shorts & Activewear. B2B wholesale & private label manufacturing from Sialkot, Pakistan.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👗</text></svg>">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Products | Nayan Global & Apparel</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,600;0,700;1,400&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--fuch:#E8005A;--fuch-lt:#FF3080;--gold:#C9922A;--gold-lt:#F0B84A;--navy:#0A0E1A;--ink:#12162A;--white:#fff;--off:#F7F5F0;--mid:#8C8A98;--dark:#1E2238;--border:rgba(0,0,0,.08);}
+*{margin:0;padding:0;box-sizing:border-box;}html{scroll-behavior:smooth;}
+body{font-family:'Outfit',sans-serif;font-weight:300;background:var(--off);color:var(--ink);}
+/* NAV */
+nav{background:rgba(255,255,255,.97);backdrop-filter:blur(16px);border-bottom:1px solid var(--border);padding:0 60px;display:flex;align-items:center;justify-content:space-between;height:72px;position:sticky;top:0;z-index:100;box-shadow:0 2px 20px rgba(0,0,0,.06);}
+.logo .mono{font-family:'Cormorant Garamond',serif;font-size:28px;font-weight:600;color:var(--ink);}
+.logo .mono .amp{color:var(--gold);font-style:italic;}
+.logo .sub{font-size:9px;letter-spacing:.28em;text-transform:uppercase;color:var(--mid);margin-top:2px;}
+.nl{display:flex;align-items:center;gap:28px;list-style:none;}
+.nl a{color:var(--ink);text-decoration:none;font-size:11.5px;letter-spacing:.12em;text-transform:uppercase;font-weight:500;transition:color .2s;}
+.nl a:hover,.nl a.active{color:var(--fuch);}
+.nl .cta{background:var(--fuch);color:#fff!important;padding:10px 22px;font-weight:700!important;}
+.nl .cta:hover{background:var(--fuch-lt);}
+/* HERO BANNER */
+.cat-hero{background:var(--navy);padding:60px 72px 0;position:relative;overflow:hidden;}
+.cat-hero::before{content:'COLLECTION';position:absolute;font-family:'Cormorant Garamond',serif;font-size:180px;font-weight:700;color:rgba(255,255,255,.03);top:50%;left:50%;transform:translate(-50%,-50%);white-space:nowrap;pointer-events:none;}
+.cat-hero-inner{position:relative;z-index:2;}
+.breadcrumb{display:flex;align-items:center;gap:8px;font-size:11px;letter-spacing:.1em;color:rgba(255,255,255,.35);margin-bottom:20px;}
+.breadcrumb a{color:rgba(255,255,255,.35);text-decoration:none;transition:color .2s;}
+.breadcrumb a:hover{color:var(--gold-lt);}
+.breadcrumb span{color:var(--gold);}
+.cat-hero h1{font-family:'Cormorant Garamond',serif;font-size:clamp(44px,6vw,72px);font-weight:600;color:#fff;line-height:.95;margin-bottom:12px;}
+.cat-hero h1 em{color:var(--gold-lt);font-style:italic;font-weight:300;}
+.cat-hero p{font-size:14px;color:rgba(255,255,255,.45);max-width:520px;line-height:1.65;margin-bottom:0;}
+/* CATEGORY TABS */
+.cat-tabs-bar{background:#fff;border-bottom:1px solid var(--border);padding:0 72px;display:flex;align-items:center;justify-content:space-between;position:sticky;top:72px;z-index:90;box-shadow:0 2px 12px rgba(0,0,0,.05);}
+.cat-tabs{display:flex;gap:0;}
+.ctab{padding:18px 28px;font-size:11px;letter-spacing:.15em;text-transform:uppercase;font-weight:600;color:var(--mid);cursor:pointer;border-bottom:3px solid transparent;margin-bottom:-1px;background:none;border-top:none;border-left:none;border-right:none;font-family:'Outfit',sans-serif;transition:all .25s;display:flex;align-items:center;gap:8px;}
+.ctab.on{color:var(--fuch);border-bottom-color:var(--fuch);}
+.ctab:hover:not(.on){color:var(--ink);}
+.ctab .count{background:var(--off);color:var(--mid);font-size:9px;font-weight:700;padding:2px 7px;border-radius:20px;}
+.ctab.on .count{background:rgba(232,0,90,.1);color:var(--fuch);}
+.filter-bar-right{display:flex;align-items:center;gap:16px;}
+.sort-sel{border:1px solid var(--border);padding:8px 14px;font-family:'Outfit',sans-serif;font-size:11.5px;color:var(--ink);background:#fff;cursor:pointer;outline:none;}
+.view-btns{display:flex;gap:4px;}
+.vb{width:32px;height:32px;display:flex;align-items:center;justify-content:center;border:1px solid var(--border);cursor:pointer;font-size:14px;background:#fff;transition:all .2s;}
+.vb.on,.vb:hover{background:var(--fuch);color:#fff;border-color:var(--fuch);}
+/* MAIN LAYOUT */
+.main-layout{display:grid;grid-template-columns:260px 1fr;gap:0;min-height:calc(100vh - 220px);}
+/* FILTER SIDEBAR */
+.sidebar{background:#fff;border-right:1px solid var(--border);padding:32px 24px;position:sticky;top:144px;height:calc(100vh - 144px);overflow-y:auto;}
+.sf-head{font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:var(--fuch);font-weight:600;margin-bottom:16px;display:flex;justify-content:space-between;align-items:center;}
+.sf-clear{font-size:10px;color:var(--mid);cursor:pointer;text-decoration:underline;letter-spacing:0;text-transform:none;}
+.sf-section{margin-bottom:28px;padding-bottom:28px;border-bottom:1px solid var(--off);}
+.sf-section:last-child{border-bottom:none;}
+.sf-title{font-size:11.5px;font-weight:600;color:var(--ink);margin-bottom:14px;letter-spacing:.08em;text-transform:uppercase;}
+/* Color filters */
+.sf-colors{display:flex;flex-wrap:wrap;gap:8px;}
+.sf-color{width:28px;height:28px;border-radius:50%;cursor:pointer;border:2px solid transparent;transition:all .2s;position:relative;}
+.sf-color.sel{border-color:var(--fuch);}
+.sf-color::after{content:'✓';position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:11px;color:#fff;opacity:0;font-weight:700;}
+.sf-color.sel::after{opacity:1;}
+/* Size filters */
+.sf-sizes{display:flex;flex-wrap:wrap;gap:6px;}
+.sf-size{padding:5px 12px;border:1.5px solid var(--border);font-size:11px;font-weight:500;cursor:pointer;transition:all .2s;background:#fff;}
+.sf-size.sel,.sf-size:hover{border-color:var(--fuch);color:var(--fuch);background:rgba(232,0,90,.05);}
+/* MOQ filters */
+.sf-moq{display:flex;flex-direction:column;gap:8px;}
+.moq-opt{display:flex;align-items:center;gap:10px;cursor:pointer;font-size:12.5px;color:var(--ink);}
+.moq-opt input{accent-color:var(--fuch);width:15px;height:15px;}
+/* PRODUCTS GRID */
+.products-area{padding:32px 40px;}
+.results-bar{display:flex;align-items:center;justify-content:space-between;margin-bottom:28px;}
+.results-count{font-size:12px;color:var(--mid);}
+.results-count strong{color:var(--ink);}
+.active-filters{display:flex;gap:8px;flex-wrap:wrap;}
+.af-tag{background:rgba(232,0,90,.08);color:var(--fuch);border:1px solid rgba(232,0,90,.2);padding:4px 10px;font-size:10.5px;display:flex;align-items:center;gap:6px;cursor:pointer;}
+.af-tag span{font-weight:600;opacity:.6;font-size:13px;}
+/* Product Grid */
+.pg{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
+.pg.list-view{grid-template-columns:1fr;}
+/* Product Card */
+.pc{background:#fff;overflow:hidden;cursor:pointer;transition:transform .3s,box-shadow .3s;border:1px solid rgba(0,0,0,.04);}
+.pc:hover{transform:translateY(-6px);box-shadow:0 20px 50px rgba(0,0,0,.12);}
+.pi{position:relative;overflow:hidden;aspect-ratio:3/4;background:var(--off);}
+.pi img{width:100%;height:100%;object-fit:cover;object-position:center top;transition:transform .6s ease;}
+.pc:hover .pi img{transform:scale(1.05);}
+.pi-badge{position:absolute;top:12px;left:12px;background:var(--fuch);color:#fff;font-size:9px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;padding:4px 10px;z-index:2;}
+.pi-moq{position:absolute;top:12px;right:12px;background:rgba(10,14,26,.82);color:var(--gold-lt);font-size:9px;font-weight:600;letter-spacing:.08em;padding:4px 10px;z-index:2;}
+.pi-actions{position:absolute;bottom:0;left:0;right:0;background:linear-gradient(transparent,rgba(10,14,26,.8));padding:20px 14px 14px;display:flex;gap:8px;opacity:0;transform:translateY(8px);transition:all .3s;z-index:3;}
+.pc:hover .pi-actions{opacity:1;transform:translateY(0);}
+.pa-btn{flex:1;padding:9px 0;font-size:10px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;border:none;cursor:pointer;font-family:'Outfit',sans-serif;transition:all .2s;}
+.pa-primary{background:var(--fuch);color:#fff;}
+.pa-primary:hover{background:var(--fuch-lt);}
+.pa-secondary{background:rgba(255,255,255,.15);color:#fff;border:1px solid rgba(255,255,255,.3);}
+.pa-secondary:hover{background:rgba(255,255,255,.25);}
+.pinfo{padding:16px;}
+.pinfo-top{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:4px;}
+.pc-cat{font-size:9px;letter-spacing:.22em;text-transform:uppercase;color:var(--fuch);}
+.pc-sku{font-size:9px;color:var(--mid);letter-spacing:.06em;}
+.pc-name{font-family:'Cormorant Garamond',serif;font-size:20px;font-weight:600;color:var(--ink);margin-bottom:8px;}
+.pc-fabric{font-size:11px;color:var(--mid);margin-bottom:10px;}
+.pc-colors{display:flex;align-items:center;gap:6px;}
+.pc-sw{width:16px;height:16px;border-radius:50%;border:1.5px solid rgba(255,255,255,.8);box-shadow:0 0 0 1px rgba(0,0,0,.1);cursor:pointer;transition:transform .2s;}
+.pc-sw:hover{transform:scale(1.3);}
+.pc-more-colors{font-size:10px;color:var(--mid);margin-left:2px;}
+.pc-bottom{display:flex;align-items:center;justify-content:space-between;margin-top:10px;padding-top:10px;border-top:1px solid var(--off);}
+.pc-moq-inline{font-size:10.5px;color:var(--mid);}
+.pc-moq-inline strong{color:var(--ink);font-weight:600;}
+.pc-link{font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--fuch);font-weight:600;text-decoration:none;display:flex;align-items:center;gap:4px;}
+/* LIST VIEW */
+.pg.list-view .pc{display:grid;grid-template-columns:260px 1fr;}
+.pg.list-view .pi{aspect-ratio:unset;height:220px;}
+.pg.list-view .pinfo{padding:24px 28px;display:flex;flex-direction:column;justify-content:space-between;}
+.pg.list-view .pc-name{font-size:26px;}
+/* PAGINATION */
+.pagination{display:flex;align-items:center;justify-content:center;gap:8px;padding:48px 0 24px;}
+.pg-btn{width:38px;height:38px;display:flex;align-items:center;justify-content:center;border:1.5px solid var(--border);font-size:12.5px;font-weight:500;cursor:pointer;background:#fff;transition:all .2s;font-family:'Outfit',sans-serif;}
+.pg-btn.on,.pg-btn:hover{background:var(--fuch);color:#fff;border-color:var(--fuch);}
+.pg-btn.disabled{opacity:.3;cursor:not-allowed;}
+/* RESPONSIVE */
+@media(max-width:1100px){nav{padding:0 24px;}.cat-hero{padding:48px 36px 0;}.cat-tabs-bar{padding:0 36px;}.products-area{padding:24px 24px;}.main-layout{grid-template-columns:1fr;}.sidebar{display:none;}.pg{grid-template-columns:repeat(2,1fr);}}
+@media(max-width:640px){.nl{display:none;}nav{padding:0 18px;}.cat-hero{padding:40px 20px 0;}.cat-hero h1{font-size:42px;}.cat-tabs-bar{padding:0 16px;overflow-x:auto;}.ctab{padding:14px 16px;white-space:nowrap;}.products-area{padding:20px 16px;}.pg{grid-template-columns:1fr 1fr;gap:12px;}}
+</style>
+<style>
+nav .active { color: var(--fuch) !important; }
+nav .nl a { position:relative; }
+nav .nl a:not(.cta)::after { content:''; position:absolute; bottom:-4px; left:0; width:0; height:2px; background:var(--fuch); transition:width .25s; }
+nav .nl a:not(.cta):hover::after, nav .nl a.active::after { width:100%; }
+@media(max-width:900px){ .ham{display:block!important;} .nl{display:none;position:absolute;top:72px;left:0;right:0;background:#fff;flex-direction:column;padding:16px 24px;gap:0!important;box-shadow:0 8px 30px rgba(0,0,0,.1);border-top:1px solid rgba(0,0,0,.06);} .nl.open{display:flex!important;} .nl li a{padding:12px 0;display:block;border-bottom:1px solid var(--off);} .nl .cta{margin-top:8px;text-align:center;padding:12px!important;} }
+</style>
+
+
+<style>
+/* ── SMOOTH PAGE TRANSITIONS ── */
+body { animation: pageFadeIn .4s ease both; }
+@keyframes pageFadeIn { from { opacity:0; transform:translateY(8px); } to { opacity:1; transform:translateY(0); } }
+a { transition: color .2s; }
+/* ── SCROLLBAR ── */
+::-webkit-scrollbar { width:6px; height:6px; }
+::-webkit-scrollbar-track { background:transparent; }
+::-webkit-scrollbar-thumb { background:rgba(232,0,90,.25); border-radius:3px; }
+::-webkit-scrollbar-thumb:hover { background:var(--fuch); }
+/* ── FOCUS STYLES ── */
+button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible { outline:2px solid var(--fuch); outline-offset:2px; }
+/* ── IMAGE LOADING SHIMMER ── */
+img { background:linear-gradient(90deg,#f0eee8 25%,#e8e4de 50%,#f0eee8 75%); background-size:200% 100%; }
+img.loaded { background:none; }
+
+/* ── WHATSAPP FLOAT BUTTON ── */
+.wa-float{position:fixed;bottom:28px;right:28px;z-index:9999;width:58px;height:58px;background:#25D366;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 6px 24px rgba(37,211,102,.45);cursor:pointer;text-decoration:none;transition:transform .25s,box-shadow .25s;animation:wapulse 2.5s ease infinite;}
+.wa-float:hover{transform:scale(1.1);box-shadow:0 10px 32px rgba(37,211,102,.6);}
+.wa-float svg{width:30px;height:30px;fill:#fff;}
+@keyframes wapulse{0%,100%{box-shadow:0 6px 24px rgba(37,211,102,.45),0 0 0 0 rgba(37,211,102,.3)}50%{box-shadow:0 6px 24px rgba(37,211,102,.45),0 0 0 12px rgba(37,211,102,0)}}
+/* ── BACK TO TOP ── */
+.btt{position:fixed;bottom:100px;right:30px;z-index:9998;width:42px;height:42px;background:var(--navy);border:1.5px solid rgba(255,255,255,.15);color:#fff;display:flex;align-items:center;justify-content:center;cursor:pointer;font-size:18px;opacity:0;pointer-events:none;transition:all .3s;}
+.btt.vis{opacity:1;pointer-events:all;}
+.btt:hover{background:var(--fuch);border-color:var(--fuch);}
+
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="logo">
+    <div class="mono">N<span class="amp">&amp;</span>A</div>
+    <div class="sub">Global &amp; Apparel</div>
+  </div>
+  <ul class="nl">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="products.html" class="active">Products</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="index.html#process">Process</a></li>
+    <li><a href="index.html#contact" class="cta">Get a Quote</a></li>
+  </ul>
+  <button class="ham" onclick="document.querySelector('.nl').classList.toggle('open')" style="display:none;background:none;border:none;font-size:22px;cursor:pointer;color:var(--ink);">☰</button>
+</nav>
+
+<!-- HERO BANNER -->
+<div class="cat-hero">
+  <div class="cat-hero-inner">
+    <div class="breadcrumb"><a href="index.html">Home</a> › <span>Products</span></div>
+    <h1>Our <em>Full</em><br>Collection</h1>
+    <p>Premium manufacturing across T-Shirts, Hoodies, Shorts and Activewear. All styles available for custom private label, wholesale, and B2B orders.</p>
+  </div>
+  <!-- Category preview strip -->
+  <div style="display:flex;gap:3px;margin-top:48px;overflow:hidden;">
+    <div style="flex:2;height:180px;overflow:hidden;position:relative;">
+      <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=700&h=180&fit=crop&q=80" style="width:100%;height:100%;object-fit:cover;opacity:.55;">
+      <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:#fff;font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:600;letter-spacing:3px;">T-SHIRTS &amp; TOPS</div>
+    </div>
+    <div style="flex:2;height:180px;overflow:hidden;position:relative;">
+      <img src="https://images.unsplash.com/photo-1556821840-3a63f15732ce?w=700&h=180&fit=crop&q=80" style="width:100%;height:100%;object-fit:cover;opacity:.55;">
+      <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:#fff;font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:600;letter-spacing:3px;">HOODIES</div>
+    </div>
+    <div style="flex:1.5;height:180px;overflow:hidden;position:relative;">
+      <img src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=600&h=180&fit=crop&q=80" style="width:100%;height:100%;object-fit:cover;opacity:.55;">
+      <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:#fff;font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:600;letter-spacing:3px;">SHORTS</div>
+    </div>
+    <div style="flex:1.5;height:180px;overflow:hidden;position:relative;">
+      <img src="https://images.unsplash.com/photo-1506629082955-511b1aa562c8?w=600&h=180&fit=crop&q=80" style="width:100%;height:100%;object-fit:cover;opacity:.55;">
+      <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;color:#fff;font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:600;letter-spacing:3px;">ACTIVEWEAR</div>
+    </div>
+  </div>
+</div>
+
+<!-- TABS BAR -->
+<div class="cat-tabs-bar">
+  <div class="cat-tabs">
+    <button class="ctab on" onclick="switchCat('all',this)">All Products <span class="count">16</span></button>
+    <button class="ctab" onclick="switchCat('tshirts',this)">👕 T-Shirts &amp; Tops <span class="count">4</span></button>
+    <button class="ctab" onclick="switchCat('hoodies',this)">🧥 Hoodies <span class="count">4</span></button>
+    <button class="ctab" onclick="switchCat('shorts',this)">🩳 Shorts &amp; Bottoms <span class="count">4</span></button>
+    <button class="ctab" onclick="switchCat('activewear',this)">🏃 Activewear <span class="count">4</span></button>
+  </div>
+  <div class="filter-bar-right">
+    <select class="sort-sel"><option>Sort: Newest</option><option>Sort: A–Z</option><option>Sort: MOQ Low–High</option></select>
+    <div class="view-btns">
+      <button class="vb on" onclick="setView('grid',this)" title="Grid view">⊞</button>
+      <button class="vb" onclick="setView('list',this)" title="List view">☰</button>
+    </div>
+  </div>
+</div>
+
+<!-- MAIN -->
+<div class="main-layout">
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <div class="sf-head">Filters <span class="sf-clear" onclick="clearFilters()">Clear all</span></div>
+
+    <div class="sf-section">
+      <div class="sf-title">Colors</div>
+      <div class="sf-colors">
+        <div class="sf-color" style="background:#1c1c23;" title="Black"></div>
+        <div class="sf-color" style="background:#e8e4d8;" title="Off White"></div>
+        <div class="sf-color" style="background:#1e3259;" title="Navy"></div>
+        <div class="sf-color" style="background:#5a3728;" title="Brick"></div>
+        <div class="sf-color" style="background:#374737;" title="Olive"></div>
+        <div class="sf-color" style="background:#4a3060;" title="Purple"></div>
+        <div class="sf-color" style="background:#822830;" title="Burgundy"></div>
+        <div class="sf-color" style="background:#b99b6e;" title="Sand"></div>
+        <div class="sf-color" style="background:#4a5560;" title="Slate"></div>
+        <div class="sf-color" style="background:#3a2820;" title="Camel"></div>
+        <div class="sf-color" style="background:#2d4020;" title="Forest"></div>
+        <div class="sf-color" style="background:#c0b0a0;" title="Stone"></div>
+      </div>
+    </div>
+
+    <div class="sf-section">
+      <div class="sf-title">Sizes Available</div>
+      <div class="sf-sizes">
+        <div class="sf-size">XS</div><div class="sf-size">S</div>
+        <div class="sf-size">M</div><div class="sf-size">L</div>
+        <div class="sf-size">XL</div><div class="sf-size">2XL</div>
+        <div class="sf-size">3XL</div><div class="sf-size">4XL</div>
+      </div>
+    </div>
+
+    <div class="sf-section">
+      <div class="sf-title">Min. Order Quantity</div>
+      <div class="sf-moq">
+        <label class="moq-opt"><input type="radio" name="moq" value="50"> 50+ units</label>
+        <label class="moq-opt"><input type="radio" name="moq" value="100"> 100+ units</label>
+        <label class="moq-opt"><input type="radio" name="moq" value="200"> 200+ units</label>
+        <label class="moq-opt"><input type="radio" name="moq" value="500"> 500+ units</label>
+      </div>
+    </div>
+
+    <div class="sf-section">
+      <div class="sf-title">Fabric Type</div>
+      <div class="sf-moq">
+        <label class="moq-opt"><input type="checkbox"> 100% Cotton</label>
+        <label class="moq-opt"><input type="checkbox"> Cotton / Polyester Blend</label>
+        <label class="moq-opt"><input type="checkbox"> French Terry</label>
+        <label class="moq-opt"><input type="checkbox"> Fleece</label>
+        <label class="moq-opt"><input type="checkbox"> Performance Dry-Fit</label>
+        <label class="moq-opt"><input type="checkbox"> Woven / Twill</label>
+      </div>
+    </div>
+
+    <div class="sf-section">
+      <div class="sf-title">Customisation</div>
+      <div class="sf-moq">
+        <label class="moq-opt"><input type="checkbox"> Private Label</label>
+        <label class="moq-opt"><input type="checkbox"> Custom Print</label>
+        <label class="moq-opt"><input type="checkbox"> Embroidery</label>
+        <label class="moq-opt"><input type="checkbox"> Custom Cut &amp; Sew</label>
+      </div>
+    </div>
+  </aside>
+
+  <!-- PRODUCTS AREA -->
+  <div class="products-area">
+    <div class="results-bar">
+      <div class="results-count">Showing <strong id="result-count">16</strong> products</div>
+      <div class="active-filters" id="active-filters"></div>
+    </div>
+
+    <div class="pg" id="product-grid">
+
+      <!-- T-SHIRTS -->
+      <div class="pc" style="cursor:pointer" data-cat="tshirts" onclick="window.location='product-detail.html?id=NGA-ECT-001'">
+        <div class="pi">
+          <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=600&h=750&fit=crop&q=80" alt="Classic Crew Tee" loading="lazy">
+          <div class="pi-badge">Bestseller</div>
+          <div class="pi-moq">MOQ: 50 pcs</div>
+          <div class="pi-actions">
+            <button class="pa-btn pa-primary" onclick="event.stopPropagation();window.location='product-detail.html?id=NGA-ECT-001'">View Details</button>
+            <button class="pa-btn pa-secondary" onclick="event.stopPropagation();addToQuote('Classic Crew Tee')">+ Quote</button>
+          </div>
+        </div>
+        <div class="pinfo">
+          <div class="pinfo-top"><div class="pc-cat">T-Shirts &amp; Tops</div><div class="pc-sku">NGA-ECT-001</div></div>
+          <div class="pc-name">Classic Crew Tee</div>
+          <div class="pc-fabric">180gsm · 100% Combed Cotton</div>
+          <div class="pc-colors">
+            <div class="pc-sw" style="background:#1c1c23" title="Black"></div>
+            <div class="pc-sw" style="background:#e8e4d8" title="Off White"></div>
+            <div class="pc-sw" style="background:#1e3259" title="Navy"></div>
+            <div class="pc-sw" style="background:#5a3728" title="Brick"></div>
+            <div class="pc-sw" style="background:#374737" title="Olive"></div>
+            <div class="pc-more-colors">+2</div>
+          </div>
+          <div class="pc-bottom">
+            <div class="pc-moq-inline">MOQ: <strong>50 pcs</strong> · XS–4XL</div>
+            <a class="pc-link" href="product-detail.html?id=NGA-ECT-001">View →</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="pc" style="cursor:pointer" data-cat="tshirts" onclick="window.location='product-detail.html?id=NGA-OST-002'">
+        <div class="pi">
+          <img src="https://images.unsplash.com/photo-1503341504253-dff4815485f1?w=600&h=750&fit=crop&q=80" alt="Oversized Street Tee" loading="lazy">
+          <div class="pi-badge">New Drop</div>
+          <div class="pi-moq">MOQ: 100 pcs</div>
+          <div class="pi-actions">
+            <button class="pa-btn pa-primary" onclick="event.stopPropagation();window.location='product-detail.html?id=NGA-OST-002'">View Details</button>
+            <button class="pa-btn pa-secondary" onclick="event.stopPropagation();addToQuote('Oversized Street Tee')">+ Quote</button>
+          </div>
+        </div>
+        <div class="pinfo">
+          <div class="pinfo-top"><div class="pc-cat">T-Shirts &amp; Tops</div><div class="pc-sku">NGA-OST-002</div></div>
+          <div class="pc-name">Oversized Street Tee</div>
+          <div class="pc-fabric">220gsm · 100% Cotton Boxy Fit</div>
+          <div class="pc-colors">
+            <div class="pc-sw" style="background:#161620" title="Washed Black"></div>
+            <div class="pc-sw" style="background:#c8c0b0" title="Stone"></div>
+            <div class="pc-sw" style="background:#37284b" title="Washed Purple"></div>
+            <div class="pc-sw" style="background:#2d4137" title="Sage"></div>
+            <div class="pc-more-colors">+2</div>
+          </div>
+          <div class="pc-bottom">
+            <div class="pc-moq-inline">MOQ: <strong>100 pcs</strong> · S–3XL</div>
+            <a class="pc-link" href="product-detail.html?id=NGA-OST-002">View →</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="pc" style="cursor:pointer" data-cat="tshirts" onclick="window.location='product-detail.html?id=NGA-PMT-003'">
+        <div class="pi">
+          <img src="https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?w=600&h=750&fit=crop&q=80" alt="Premium Muscle Tee" loading="lazy">
+          <div class="pi-moq">MOQ: 50 pcs</div>
+          <div class="pi-actions">
+            <button class="pa-btn pa-primary" onclick="event.stopPropagation();window.location='product-detail.html?id=NGA-PMT-003'">View Details</button>
+            <button class="pa-btn pa-secondary" onclick="event.stopPropagation();addToQuote('Premium Muscle Tee')">+ Quote</button>
+          </div>
+        </div>
+        <div class="pinfo">
+          <div class="pinfo-top"><div class="pc-cat">T-Shirts &amp; Tops</div><div class="pc-sku">NGA-PMT-003</div></div>
+          <div class="pc-name">Premium Muscle Tee</div>
+          <div class="pc-fabric">160gsm · Cotton / Modal Blend</div>
+          <div class="pc-colors">
+            <div class="pc-sw" style="background:#14141a" title="Black"></div>
+            <div class="pc-sw" style="background:#dcd8cc" title="White"></div>
+            <div class="pc-sw" style="background:#501e20" title="Burgundy"></div>
+            <div class="pc-sw" style="background:#1e3755" title="Royal Blue"></div>
+            <div class="pc-sw" style="background:#b99b6e" title="Sand"></div>
+          </div>
+          <div class="pc-bottom">
+            <div class="pc-moq-inline">MOQ: <strong>50 pcs</strong> · XS–3XL</div>
+            <a class="pc-link" href="product-detail.html?id=NGA-PMT-003">View →</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="pc" style="cursor:pointer" data-cat="tshirts" onclick="window.location='product-detail.html?id=NGA-GDT-004'">
+        <div class="pi">
+          <img src="https://images.unsplash.com/photo-1562157873-818bc0726f68?w=600&h=750&fit=crop&q=80" alt="Garment-Dye Tee" loading="lazy">
+          <div class="pi-badge">Custom</div>
+          <div class="pi-moq">MOQ: 200 pcs</div>
+          <div class="pi-actions">
+            <button class="pa-btn pa-primary" onclick="event.stopPropagation();window.location='product-detail.html?id=NGA-GDT-004'">View Details</button>
+            <button class="pa-btn pa-secondary" onclick="event.stopPropagation();addToQuote('Garment-Dye Tee')">+ Quote</button>
+          </div>
+        </div>
+        <div class="pinfo">
+          <div class="pinfo-top"><div class="pc-cat">T-Shirts &amp; Tops</div><div class="pc-sku">NGA-GDT-004</div></div>
+          <div class="pc-name">Garment-Dye Tee</div>
+          <div class="pc-fabric">200gsm · Enzyme Washed Cotton</div>
+          <div class="pc-colors">
+            <div class="pc-sw" style="background:#3b2d20" title="Vintage Brown"></div>
+            <div class="pc-sw" style="background:#1e2d42" title="Washed Navy"></div>
+            <div class="pc-sw" style="background:#4b2020" title="Faded Red"></div>
+            <div class="pc-sw" style="background:#2a3d2a" title="Washed Green"></div>
+            <div class="pc-more-colors">+4</div>
+          </div>
+          <div class="pc-bottom">
+            <div class="pc-moq-inline">MOQ: <strong>200 pcs</strong> · S–2XL</div>
+            <a class="pc-link" href="product-detail.html?id=NGA-GDT-004">View →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- HOODIES -->
+      <div class="pc" style="cursor:pointer" data-cat="hoodies" onclick="window.location='product-detail.html?id=NGA-CPH-005'">
+        <div class="pi">
+          <img src="https://images.unsplash.com/photo-1556821840-3a63f15732ce?w=600&h=750&fit=crop&q=80" alt="Classic Pullover Hoodie" loading="lazy">
+          <div class="pi-badge">Popular</div>
+          <div class="pi-moq">MOQ: 50 pcs</div>
+          <div class="pi-actions">
+            <button class="pa-btn pa-primary" onclick="event.stopPropagation();window.location='product-detail.html?id=NGA-CPH-005'">View Details</button>
+            <button class="pa-btn pa-secondary" onclick="event.stopPropagation();addToQuote('Classic Pullover Hoodie')">+ Quote</button>
+          </div>
+        </div>
+        <div class="pinfo">
+          <div class="pinfo-top"><div class="pc-cat">Hoodies &amp; Sweatshirts</div><div class="pc-sku">NGA-CPH-005</div></div>
+          <div class="pc-name">Classic Pullover Hoodie</div>
+          <div class="pc-fabric">320gsm · 80/20 Cotton Fleece</div>
+          <div class="pc-colors">
+            <div class="pc-sw" style="background:#161620"></div>
+            <div class="pc-sw" style="background:#c0b8a8"></div>
+            <div class="pc-sw" style="background:#263459"></div>
+            <div class="pc-sw" style="background:#3c3048"></div>
+            <div class="pc-sw" style="background:#303d30"></div>
+          </div>
+          <div class="pc-bottom">
+            <div class="pc-moq-inline">MOQ: <strong>50 pcs</strong> · XS–4XL</div>
+            <a class="pc-link" href="product-detail.html?id=NGA-CPH-005">View →</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="pc" style="cursor:pointer" data-cat="hoodies" onclick="window.location='product-detail.html?id=NGA-FZH-006'">
+        <div class="pi">
+          <img src="https://images.unsplash.com/photo-1614975059251-992f11792b9f?w=600&h=750&fit=crop&q=80" alt="Full-Zip Hoodie" loading="lazy">
+          <div class="pi-badge">New</div>
+          <div class="pi-moq">MOQ: 100 pcs</div>
+          <div class="pi-actions">
+            <button class="pa-btn pa-primary" onclick="event.stopPropagation();window.location='product-detail.html?id=NGA-FZH-006'">View Details</button>
+            <button class="pa-btn pa-secondary" onclick="event.stopPropagation();addToQuote('Full-Zip Hoodie')">+ Quote</button>
+          </div>
+        </div>
+        <div class="pinfo">
+          <div class="pinfo-top"><div class="pc-cat">Hoodies &amp; Sweatshirts</div><div class="pc-sku">NGA-FZH-006</div></div>
+          <div class="pc-name">Full-Zip Hoodie</div>
+          <div class="pc-fabric">340gsm · Heavyweight French Terry</div>
+          <div class="pc-colors">
+            <div class="pc-sw" style="background:#1a1a20"></div>
+            <div class="pc-sw" style="background:#4a5560"></div>
+            <div class="pc-sw" style="background:#3a2818"></div>
+            <div class="pc-sw" style="background:#223830"></div>
+            <div class="pc-sw" style="background:#54363c"></div>
+          </div>
+          <div class="pc-bottom">
+            <div class="pc-moq-inline">MOQ: <strong>100 pcs</strong> · S–3XL</div>
+            <a class="pc-link" href="product-detail.html?id=NGA-FZH-006">View →</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="pc" style="cursor:pointer" data-cat="hoodies" onclick="window.location='product-detail.html?id=NGA-GDC-007'">
+        <div class="pi">
+          <img src="https://images.unsplash.com/photo-1576566588028-4147f3842f27?w=600&h=750&fit=crop&q=80" alt="Garment-Dyed Crewneck" loading="lazy">
+          <div class="pi-badge">Custom</div>
+          <div class="pi-moq">MOQ: 200 pcs</div>
+          <div class="pi-actions">
+            <button class="pa-btn pa-primary" onclick="event.stopPropagation();window.location='product-detail.html?id=NGA-GDC-007'">View Details</button>
+            <button class="pa-btn pa-secondary" onclick="event.stopPropagation();addToQuote('Garment-Dyed Crewneck')">+ Quote</button>
+          </div>
+        </div>
+        <div class="pinfo">
+          <div class="pinfo-top"><div class="pc-cat">Hoodies &amp; Sweatshirts</div><div class="pc-sku">NGA-GDC-007</div></div>
+          <div class="pc-name">Garment-Dyed Crewneck</div>
+          <div class="pc-fabric">300gsm · Enzyme Washed Fleece</div>
+          <div class="pc-colors">
+            <div class="pc-sw" style="background:#3a2d22"></div>
+            <div class="pc-sw" style="background:#1e2d44"></div>
+            <div class="pc-sw" style="background:#4b3030"></div>
+            <div class="pc-sw" style="background:#2a3b28"></div>
+            <div class="pc-more-colors">+2</div>
+          </div>
+          <div class="pc-bottom">
+            <div class="pc-moq-inline">MOQ: <strong>200 pcs</strong> · S–2XL</div>
+            <a class="pc-link" href="product-detail.html?id=NGA-GDC-007">View →</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="pc" style="cursor:pointer" data-cat="hoodies" onclick="window.location='product-detail.html?id=NGA-HWH-008'">
+        <div class="pi">
+          <img src="https://images.unsplash.com/photo-1618354691373-d851c5c3a990?w=600&h=750&fit=crop&q=80" alt="Heavyweight Hoodie" loading="lazy">
+          <div class="pi-moq">MOQ: 50 pcs</div>
+          <div class="pi-actions">
+            <button class="pa-btn pa-primary" onclick="event.stopPropagation();window.location='product-detail.html?id=NGA-HWH-008'">View Details</button>
+            <button class="pa-btn pa-secondary" onclick="event.stopPropagation();addToQuote('Heavyweight Hoodie')">+ Quote</button>
+          </div>
+        </div>
+        <div class="pinfo">
+          <div class="pinfo-top"><div class="pc-cat">Hoodies &amp; Sweatshirts</div><div class="pc-sku">NGA-HWH-008</div></div>
+          <div class="pc-name">Heavyweight Hoodie</div>
+          <div class="pc-fabric">420gsm · Premium Loop-Back Fleece</div>
+          <div class="pc-colors">
+            <div class="pc-sw" style="background:#101018"></div>
+            <div class="pc-sw" style="background:#708090"></div>
+            <div class="pc-sw" style="background:#3a2820"></div>
+            <div class="pc-sw" style="background:#283820"></div>
+          </div>
+          <div class="pc-bottom">
+            <div class="pc-moq-inline">MOQ: <strong>50 pcs</strong> · XS–4XL</div>
+            <a class="pc-link" href="product-detail.html?id=NGA-HWH-008">View →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- SHORTS -->
+      <div class="pc" style="cursor:pointer" data-cat="shorts" onclick="window.location='product-detail.html?id=NGA-PBS-009'">
+        <div class="pi">
+          <img src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=600&h=750&fit=crop&q=80" alt="Premium Board Short" loading="lazy">
+          <div class="pi-badge">New Drop</div>
+          <div class="pi-moq">MOQ: 100 pcs</div>
+          <div class="pi-actions">
+            <button class="pa-btn pa-primary" onclick="event.stopPropagation();window.location='product-detail.html?id=NGA-PBS-009'">View Details</button>
+            <button class="pa-btn pa-secondary" onclick="event.stopPropagation();addToQuote('Premium Board Short')">+ Quote</button>
+          </div>
+        </div>
+        <div class="pinfo">
+          <div class="pinfo-top"><div class="pc-cat">Shorts &amp; Bottoms</div><div class="pc-sku">NGA-PBS-009</div></div>
+          <div class="pc-name">Premium Board Short</div>
+          <div class="pc-fabric">160gsm · 100% Polyester Quick-Dry</div>
+          <div class="pc-colors">
+            <div class="pc-sw" style="background:#16375f"></div>
+            <div class="pc-sw" style="background:#161620"></div>
+            <div class="pc-sw" style="background:#b43c1e"></div>
+            <div class="pc-sw" style="background:#1c4b34"></div>
+            <div class="pc-sw" style="background:#6e551e"></div>
+          </div>
+          <div class="pc-bottom">
+            <div class="pc-moq-inline">MOQ: <strong>100 pcs</strong> · XS–3XL</div>
+            <a class="pc-link" href="product-detail.html?id=NGA-PBS-009">View →</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="pc" style="cursor:pointer" data-cat="shorts" onclick="window.location='product-detail.html?id=NGA-AJS-010'">
+        <div class="pi">
+          <img src="https://images.unsplash.com/photo-1552902865-b72c031ac5ea?w=600&h=750&fit=crop&q=80" alt="Athletic Jogger Short" loading="lazy">
+          <div class="pi-badge">Popular</div>
+          <div class="pi-moq">MOQ: 50 pcs</div>
+          <div class="pi-actions">
+            <button class="pa-btn pa-primary" onclick="event.stopPropagation();window.location='product-detail.html?id=NGA-AJS-010'">View Details</button>
+            <button class="pa-btn pa-secondary" onclick="event.stopPropagation();addToQuote('Athletic Jogger Short')">+ Quote</button>
+          </div>
+        </div>
+        <div class="pinfo">
+          <div class="pinfo-top"><div class="pc-cat">Shorts &amp; Bottoms</div><div class="pc-sku">NGA-AJS-010</div></div>
+          <div class="pc-name">Athletic Jogger Short</div>
+          <div class="pc-fabric">220gsm · French Terry / Cotton Blend</div>
+          <div class="pc-colors">
+            <div class="pc-sw" style="background:#161620"></div>
+            <div class="pc-sw" style="background:#414550"></div>
+            <div class="pc-sw" style="background:#193255"></div>
+            <div class="pc-sw" style="background:#4b1e1e"></div>
+            <div class="pc-sw" style="background:#1e4128"></div>
+          </div>
+          <div class="pc-bottom">
+            <div class="pc-moq-inline">MOQ: <strong>50 pcs</strong> · XS–4XL</div>
+            <a class="pc-link" href="product-detail.html?id=NGA-AJS-010">View →</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="pc" style="cursor:pointer" data-cat="shorts">
+        <div class="pi">
+          <img src="https://images.unsplash.com/photo-1617952236317-0bd127407984?w=600&h=750&fit=crop&q=80" alt="Urban Cargo Short" loading="lazy">
+          <div class="pi-badge">Bestseller</div>
+          <div class="pi-moq">MOQ: 100 pcs</div>
+          <div class="pi-actions">
+            <button class="pa-btn pa-primary">View Details</button>
+            <button class="pa-btn pa-secondary" onclick="event.stopPropagation();addToQuote('Urban Cargo Short')">+ Quote</button>
+          </div>
+        </div>
+        <div class="pinfo">
+          <div class="pinfo-top"><div class="pc-cat">Shorts &amp; Bottoms</div><div class="pc-sku">NGA-UCS-011</div></div>
+          <div class="pc-name">Urban Cargo Short</div>
+          <div class="pc-fabric">240gsm · Cotton Twill / Ripstop</div>
+          <div class="pc-colors">
+            <div class="pc-sw" style="background:#554e37"></div>
+            <div class="pc-sw" style="background:#262d26"></div>
+            <div class="pc-sw" style="background:#161620"></div>
+            <div class="pc-sw" style="background:#41322a"></div>
+            <div class="pc-sw" style="background:#383d44"></div>
+          </div>
+          <div class="pc-bottom">
+            <div class="pc-moq-inline">MOQ: <strong>100 pcs</strong> · S–3XL</div>
+            <a class="pc-link" href="product-detail.html?id=NGA-UCS-011">View →</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="pc" style="cursor:pointer" data-cat="shorts">
+        <div class="pi">
+          <img src="https://images.unsplash.com/photo-1545291730-faff8ca1d4b0?w=600&h=750&fit=crop&q=80" alt="Resort Swim Short" loading="lazy">
+          <div class="pi-moq">MOQ: 100 pcs</div>
+          <div class="pi-actions">
+            <button class="pa-btn pa-primary">View Details</button>
+            <button class="pa-btn pa-secondary" onclick="event.stopPropagation();addToQuote('Resort Swim Short')">+ Quote</button>
+          </div>
+        </div>
+        <div class="pinfo">
+          <div class="pinfo-top"><div class="pc-cat">Shorts &amp; Bottoms</div><div class="pc-sku">NGA-RSS-012</div></div>
+          <div class="pc-name">Resort Swim Short</div>
+          <div class="pc-fabric">140gsm · Recycled Polyester</div>
+          <div class="pc-colors">
+            <div class="pc-sw" style="background:#1a4060"></div>
+            <div class="pc-sw" style="background:#161620"></div>
+            <div class="pc-sw" style="background:#3a6030"></div>
+            <div class="pc-sw" style="background:#602018"></div>
+          </div>
+          <div class="pc-bottom">
+            <div class="pc-moq-inline">MOQ: <strong>100 pcs</strong> · S–2XL</div>
+            <a class="pc-link" href="product-detail.html?id=NGA-RSS-012">View →</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- ACTIVEWEAR -->
+      <div class="pc" style="cursor:pointer" data-cat="activewear">
+        <div class="pi">
+          <img src="https://images.unsplash.com/photo-1506629082955-511b1aa562c8?w=600&h=750&fit=crop&q=80" alt="Performance Training Tee" loading="lazy">
+          <div class="pi-badge">New</div>
+          <div class="pi-moq">MOQ: 100 pcs</div>
+          <div class="pi-actions">
+            <button class="pa-btn pa-primary">View Details</button>
+            <button class="pa-btn pa-secondary" onclick="addToQuote('Performance Training Tee')">+ Quote</button>
+          </div>
+        </div>
+        <div class="pinfo">
+          <div class="pinfo-top"><div class="pc-cat">Activewear</div><div class="pc-sku">NGA-PTT-013</div></div>
+          <div class="pc-name">Performance Training Tee</div>
+          <div class="pc-fabric">140gsm · Dry-Fit Polyester</div>
+          <div class="pc-colors">
+            <div class="pc-sw" style="background:#101820"></div>
+            <div class="pc-sw" style="background:#dcdcdc"></div>
+            <div class="pc-sw" style="background:#1a3c60"></div>
+            <div class="pc-sw" style="background:#601a1a"></div>
+            <div class="pc-sw" style="background:#1a3c28"></div>
+          </div>
+          <div class="pc-bottom">
+            <div class="pc-moq-inline">MOQ: <strong>100 pcs</strong> · XS–3XL</div>
+            <a class="pc-link" href="product-detail.html?id=NGA-PTT-013">View →</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="pc" style="cursor:pointer" data-cat="activewear">
+        <div class="pi">
+          <img src="https://images.unsplash.com/photo-1571945153237-4929e783af4a?w=600&h=750&fit=crop&q=80" alt="Sport Zip Track Jacket" loading="lazy">
+          <div class="pi-moq">MOQ: 100 pcs</div>
+          <div class="pi-actions">
+            <button class="pa-btn pa-primary">View Details</button>
+            <button class="pa-btn pa-secondary" onclick="addToQuote('Sport Zip Track Jacket')">+ Quote</button>
+          </div>
+        </div>
+        <div class="pinfo">
+          <div class="pinfo-top"><div class="pc-cat">Activewear</div><div class="pc-sku">NGA-STJ-014</div></div>
+          <div class="pc-name">Sport Zip Track Jacket</div>
+          <div class="pc-fabric">200gsm · Tricot Polyester</div>
+          <div class="pc-colors">
+            <div class="pc-sw" style="background:#101018"></div>
+            <div class="pc-sw" style="background:#1a3060"></div>
+            <div class="pc-sw" style="background:#301a10"></div>
+            <div class="pc-sw" style="background:#182818"></div>
+          </div>
+          <div class="pc-bottom">
+            <div class="pc-moq-inline">MOQ: <strong>100 pcs</strong> · S–3XL</div>
+            <a class="pc-link" href="product-detail.html?id=NGA-STJ-014">View →</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="pc" style="cursor:pointer" data-cat="activewear">
+        <div class="pi">
+          <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?w=600&h=750&fit=crop&q=80" alt="Pro Compression Tights" loading="lazy">
+          <div class="pi-badge">Popular</div>
+          <div class="pi-moq">MOQ: 50 pcs</div>
+          <div class="pi-actions">
+            <button class="pa-btn pa-primary">View Details</button>
+            <button class="pa-btn pa-secondary" onclick="addToQuote('Pro Compression Tights')">+ Quote</button>
+          </div>
+        </div>
+        <div class="pinfo">
+          <div class="pinfo-top"><div class="pc-cat">Activewear</div><div class="pc-sku">NGA-PCT-015</div></div>
+          <div class="pc-name">Pro Compression Tights</div>
+          <div class="pc-fabric">200gsm · Nylon / Spandex 80/20</div>
+          <div class="pc-colors">
+            <div class="pc-sw" style="background:#121018"></div>
+            <div class="pc-sw" style="background:#1e3258"></div>
+            <div class="pc-sw" style="background:#3e1818"></div>
+            <div class="pc-sw" style="background:#183218"></div>
+          </div>
+          <div class="pc-bottom">
+            <div class="pc-moq-inline">MOQ: <strong>50 pcs</strong> · XS–2XL</div>
+            <a class="pc-link" href="product-detail.html?id=NGA-PCT-015">View →</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="pc" style="cursor:pointer" data-cat="activewear">
+        <div class="pi">
+          <img src="https://images.unsplash.com/photo-1540497077202-7c8a3999166f?w=600&h=750&fit=crop&q=80" alt="Athletic Gym Set" loading="lazy">
+          <div class="pi-badge">Custom</div>
+          <div class="pi-moq">MOQ: 200 pcs</div>
+          <div class="pi-actions">
+            <button class="pa-btn pa-primary">View Details</button>
+            <button class="pa-btn pa-secondary" onclick="addToQuote('Athletic Gym Set')">+ Quote</button>
+          </div>
+        </div>
+        <div class="pinfo">
+          <div class="pinfo-top"><div class="pc-cat">Activewear</div><div class="pc-sku">NGA-AGS-016</div></div>
+          <div class="pc-name">Athletic Gym Set</div>
+          <div class="pc-fabric">220gsm · Poly-Spandex 4-Way Stretch</div>
+          <div class="pc-colors">
+            <div class="pc-sw" style="background:#181020"></div>
+            <div class="pc-sw" style="background:#eaeaea"></div>
+            <div class="pc-sw" style="background:#201840"></div>
+            <div class="pc-sw" style="background:#402020"></div>
+          </div>
+          <div class="pc-bottom">
+            <div class="pc-moq-inline">MOQ: <strong>200 pcs</strong> · XS–2XL</div>
+            <a class="pc-link" href="product-detail.html?id=NGA-AGS-016">View →</a>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /pg -->
+
+    <!-- PAGINATION -->
+    <div class="pagination">
+      <button class="pg-btn disabled" title="Previous page">←</button>
+      <button class="pg-btn on" onclick="scrollToProducts()">1</button>
+      <button class="pg-btn" onclick="scrollToProducts()" title="More products coming soon">2</button>
+      <button class="pg-btn" onclick="scrollToProducts()" title="More products coming soon">3</button>
+      <button class="pg-btn" onclick="scrollToProducts()">→</button>
+    </div>
+    <p style="text-align:center;font-size:12px;color:var(--mid);margin-top:12px;">Showing 16 of 500+ styles · <a href="/cdn-cgi/l/email-protection#82ebece4edc2ece3fbe3ece5eeede0e3eee3f2f2e3f0e7eeace1edefbdf1f7e0e8e7e1f6bfc4f7eeeea2c1e3f6e3eeede5a2d0e7f3f7e7f1f6" style="color:var(--fuch);text-decoration:none;font-weight:600;">Request full catalog →</a></p>
+  </div><!-- /products-area -->
+</div><!-- /main-layout -->
+
+<!-- QUOTE DRAWER -->
+<div id="quote-drawer" style="position:fixed;bottom:0;right:0;width:360px;background:#fff;box-shadow:0 -8px 40px rgba(0,0,0,.18);z-index:999;transform:translateY(100%);transition:transform .4s ease;border-top:3px solid var(--fuch);">
+  <div style="padding:20px 24px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--off);">
+    <div style="font-size:13px;font-weight:600;color:var(--ink);">Quote List <span id="quote-count" style="background:var(--fuch);color:#fff;border-radius:20px;padding:1px 8px;font-size:11px;margin-left:6px;">0</span></div>
+    <button onclick="closeDrawer()" style="background:none;border:none;font-size:20px;cursor:pointer;color:var(--mid);">×</button>
+  </div>
+  <div id="quote-items" style="padding:16px 24px;max-height:220px;overflow-y:auto;display:flex;flex-direction:column;gap:8px;"></div>
+  <div style="padding:16px 24px;border-top:1px solid var(--off);">
+    <a href="index.html#contact" style="display:block;background:var(--fuch);color:#fff;text-align:center;padding:14px;font-size:11px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;text-decoration:none;transition:background .2s;" onmouseover="this.style.background='#ff3080'" onmouseout="this.style.background='var(--fuch)'">Submit Quote Request →</a>
+  </div>
+</div>
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+// Cat tabs
+function scrollToProducts(){document.getElementById("product-grid").scrollIntoView({behavior:"smooth",block:"start"});}
+function switchCat(cat, btn){
+  document.querySelectorAll('.ctab').forEach(b=>b.classList.remove('on'));
+  btn.classList.add('on');
+  let visible = [];
+  let count = 0;
+  document.querySelectorAll('.pc').forEach(c=>{
+    if(cat==='all' || c.dataset.cat===cat){
+      c.style.display='';
+      visible.push(c);
+      count++;
+    } else {
+      c.style.display='none';
+    }
+  });
+  document.getElementById('result-count').textContent = count;
+  // Re-animate visible cards
+  animateCards(visible);
+}
+
+// View toggle
+function setView(v,btn){
+  document.querySelectorAll('.vb').forEach(b=>b.classList.remove('on'));
+  btn.classList.add('on');
+  const grid = document.getElementById('product-grid');
+  if(v==='list') grid.classList.add('list-view');
+  else grid.classList.remove('list-view');
+}
+
+// Color / size filter interactions
+document.querySelectorAll('.sf-color').forEach(el=>{
+  el.addEventListener('click',function(){
+    el.classList.toggle('sel');
+    updateActiveFilters();
+  });
+});
+document.querySelectorAll('.sf-size').forEach(el=>{
+  el.addEventListener('click',function(){
+    document.querySelectorAll('.sf-size').forEach(s=>s.classList.remove('sel'));
+    el.classList.add('sel');
+    updateActiveFilters();
+  });
+});
+
+function updateActiveFilters(){
+  const af = document.getElementById('active-filters');
+  af.innerHTML='';
+  document.querySelectorAll('.sf-color.sel').forEach(el=>{
+    const tag = document.createElement('div');
+    tag.className='af-tag';
+    tag.innerHTML=`<div style="width:12px;height:12px;border-radius:50%;background:${el.style.background}"></div>${el.title} <span onclick="el.classList.remove('sel');updateActiveFilters()">×</span>`;
+    af.appendChild(tag);
+  });
+  document.querySelectorAll('.sf-size.sel').forEach(el=>{
+    const tag = document.createElement('div');
+    tag.className='af-tag';
+    tag.textContent=el.textContent;
+    af.appendChild(tag);
+  });
+}
+
+function clearFilters(){
+  document.querySelectorAll('.sf-color.sel,.sf-size.sel').forEach(el=>el.classList.remove('sel'));
+  document.querySelectorAll('input[type=radio],input[type=checkbox]').forEach(el=>el.checked=false);
+  document.getElementById('active-filters').innerHTML='';
+}
+
+// Quote system
+let quoteItems=[];
+function addToQuote(name){
+  if(!quoteItems.includes(name)) quoteItems.push(name);
+  renderQuote();
+  document.getElementById('quote-drawer').style.transform='translateY(0)';
+}
+function closeDrawer(){
+  document.getElementById('quote-drawer').style.transform='translateY(100%)';
+}
+function renderQuote(){
+  const container = document.getElementById('quote-items');
+  const count = document.getElementById('quote-count');
+  container.innerHTML = quoteItems.map(item=>`
+    <div style="display:flex;align-items:center;justify-content:space-between;font-size:12.5px;padding:6px 0;border-bottom:1px solid var(--off);">
+      <span>${item}</span>
+      <button onclick="removeQuote('${item}')" style="background:none;border:none;color:var(--mid);cursor:pointer;font-size:16px;">×</button>
+    </div>`).join('');
+  count.textContent = quoteItems.length;
+}
+function removeQuote(name){
+  quoteItems=quoteItems.filter(i=>i!==name);
+  renderQuote();
+  if(!quoteItems.length) closeDrawer();
+}
+
+// Scroll reveal
+// Animate cards in on scroll — fixed version that works with tab switching
+function animateCards(cards) {
+  cards.forEach(function(el, i) {
+    el.style.opacity = '0';
+    el.style.transform = 'translateY(20px)';
+    el.style.transition = 'opacity .5s ease, transform .5s ease, box-shadow .3s';
+    setTimeout(function() {
+      el.style.opacity = '1';
+      el.style.transform = 'translateY(0)';
+    }, 60 + i * 80);
+  });
+}
+// Initial load animation
+setTimeout(function() {
+  animateCards(document.querySelectorAll('.pc'));
+}, 100);
+</script>
+
+<!-- FOOTER -->
+<footer>
+  <div class="ftop">
+    <div class="fb">
+      <div class="mono">N<span class="amp">&amp;</span>A</div>
+      <div class="sub">Global &amp; Apparel</div>
+      <p>Premium clothing manufacturer based in Sialkot, Pakistan. Supplying top fashion brands &amp; retailers across 50+ countries since 2025.</p>
+      <div style="display:flex;gap:14px;margin-top:20px;">
+        <a href="https://instagram.com/nayanglobalapparel" target="_blank" style="color:rgba(255,255,255,.4);font-size:11px;letter-spacing:.1em;text-decoration:none;transition:color .2s;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='rgba(255,255,255,.4)'">Instagram</a>
+        <a href="https://linkedin.com/company/nayan-global-apparel" target="_blank" style="color:rgba(255,255,255,.4);font-size:11px;letter-spacing:.1em;text-decoration:none;transition:color .2s;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='rgba(255,255,255,.4)'">LinkedIn</a>
+        <a href="https://wa.me/447700900123" target="_blank" style="color:rgba(255,255,255,.4);font-size:11px;letter-spacing:.1em;text-decoration:none;transition:color .2s;" onmouseover="this.style.color='#25D366'" onmouseout="this.style.color='rgba(255,255,255,.4)'">WhatsApp</a>
+      </div>
+    </div>
+    <div class="fc">
+      <h4>Collections</h4>
+      <ul>
+        <li><a href="products.html">T-Shirts &amp; Tops</a></li>
+        <li><a href="products.html">Hoodies &amp; Sweatshirts</a></li>
+        <li><a href="products.html">Shorts &amp; Bottoms</a></li>
+        <li><a href="products.html">Activewear</a></li>
+        <li><a href="products.html">View All Products</a></li>
+      </ul>
+    </div>
+    <div class="fc">
+      <h4>Company</h4>
+      <ul>
+        <li><a href="index.html#about">About Us</a></li>
+        <li><a href="index.html#process">Our Process</a></li>
+        <li><a href="index.html#about">Quality Standards</a></li>
+        <li><a href="index.html#catalog">Catalogs</a></li>
+        <li><a href="index.html#contact">Contact Us</a></li>
+      </ul>
+    </div>
+    <div class="fc">
+      <h4>Get In Touch</h4>
+      <ul>
+        <li><a href="/cdn-cgi/l/email-protection#264f4840496648475f4748414a4944474a4756564754434a0845494b"><span class="__cf_email__" data-cfemail="adc4c3cbc2edc3ccd4ccc3cac1c2cfccc1ccddddccdfc8c183cec2c0">[email&#160;protected]</span></a></li>
+        <li><a href="tel:+447700900123">+44 7700 900123</a></li>
+        <li><a href="https://wa.me/447700900123" target="_blank">WhatsApp Us</a></li>
+        <li><a href="index.html#contact">Request a Quote</a></li>
+        <li><a href="product-detail.html">Request a Sample</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="fbot">
+    <span>© 2025 Nayan Global &amp; Apparel. All rights reserved. Sialkot, Pakistan.</span>
+    <div class="fleg">
+      <a href="#" onclick="document.getElementById('privacy-modal').style.display='flex';return false;">Privacy Policy</a>
+      <a href="#" onclick="document.getElementById('terms-modal').style.display='flex';return false;">Terms of Service</a>
+      <a href="index.html">Home</a>
+    </div>
+  </div>
+<!-- info@nayanglobalapparel.com --></footer>
+
+<!-- Privacy Modal -->
+<div id="privacy-modal" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,.7);z-index:10000;align-items:center;justify-content:center;" onclick="if(event.target===this)this.style.display='none'">
+  <div style="background:#fff;max-width:600px;width:90%;max-height:80vh;overflow-y:auto;padding:40px;">
+    <h2 style="font-family:'Cormorant Garamond',serif;font-size:28px;margin-bottom:16px;">Privacy Policy</h2>
+    <p style="font-size:13px;color:#555;line-height:1.8;margin-bottom:12px;">Nayan Global &amp; Apparel ("we", "us") is committed to protecting your personal information. This policy explains how we collect, use, and safeguard data submitted through our website.</p>
+    <p style="font-size:13px;color:#555;line-height:1.8;margin-bottom:12px;"><strong>Information We Collect:</strong> Name, email, company name, phone number, and order requirements submitted via our contact and quote forms.</p>
+    <p style="font-size:13px;color:#555;line-height:1.8;margin-bottom:12px;"><strong>How We Use It:</strong> To respond to enquiries, process orders, send relevant product updates, and improve our services.</p>
+    <p style="font-size:13px;color:#555;line-height:1.8;margin-bottom:12px;"><strong>Data Sharing:</strong> We do not sell or share your data with third parties except where required by law or to fulfil your order.</p>
+    <p style="font-size:13px;color:#555;line-height:1.8;margin-bottom:20px;"><strong>Contact:</strong> For data-related requests, email <a href="/cdn-cgi/l/email-protection#fa93949c95ba949b839b949d9695989b969b8a8a9b889f96d4999597" style="color:#E8005A;"><span class="__cf_email__" data-cfemail="e58c8b838aa58b849c848b82898a87848984959584978089cb868a88">[email&#160;protected]</span></a></p>
+    <button onclick="document.getElementById('privacy-modal').style.display='none'" style="background:#E8005A;color:#fff;border:none;padding:10px 28px;cursor:pointer;font-family:'Outfit',sans-serif;font-size:12px;letter-spacing:.12em;text-transform:uppercase;">Close</button>
+  </div>
+</div>
+
+<!-- Terms Modal -->
+<div id="terms-modal" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,.7);z-index:10000;align-items:center;justify-content:center;" onclick="if(event.target===this)this.style.display='none'">
+  <div style="background:#fff;max-width:600px;width:90%;max-height:80vh;overflow-y:auto;padding:40px;">
+    <h2 style="font-family:'Cormorant Garamond',serif;font-size:28px;margin-bottom:16px;">Terms of Service</h2>
+    <p style="font-size:13px;color:#555;line-height:1.8;margin-bottom:12px;"><strong>1. Orders &amp; Samples:</strong> All orders require written confirmation. Sample requests are subject to our sample policy. Sample costs are deducted from your first bulk order.</p>
+    <p style="font-size:13px;color:#555;line-height:1.8;margin-bottom:12px;"><strong>2. Minimum Order Quantities:</strong> MOQ varies by product (from 50 units). Custom orders may require higher MOQ.</p>
+    <p style="font-size:13px;color:#555;line-height:1.8;margin-bottom:12px;"><strong>3. Payment Terms:</strong> 50% deposit required before production. Balance due before shipment unless otherwise agreed in writing.</p>
+    <p style="font-size:13px;color:#555;line-height:1.8;margin-bottom:12px;"><strong>4. Lead Times:</strong> Standard lead time is 21–35 days after sample approval. Rush orders may be available at additional cost.</p>
+    <p style="font-size:13px;color:#555;line-height:1.8;margin-bottom:12px;"><strong>5. Quality:</strong> We guarantee all products meet agreed specifications. Claims must be raised within 7 days of receipt.</p>
+    <p style="font-size:13px;color:#555;line-height:1.8;margin-bottom:20px;"><strong>6. Contact:</strong> <a href="/cdn-cgi/l/email-protection#3b52555d547b555a425a555c5754595a575a4b4b5a495e5715585456" style="color:#E8005A;"><span class="__cf_email__" data-cfemail="50393e363f103e3129313e373c3f32313c3120203122353c7e333f3d">[email&#160;protected]</span></a></p>
+    <button onclick="document.getElementById('terms-modal').style.display='none'" style="background:#E8005A;color:#fff;border:none;padding:10px 28px;cursor:pointer;font-family:'Outfit',sans-serif;font-size:12px;letter-spacing:.12em;text-transform:uppercase;">Close</button>
+  </div>
+</div>
+
+
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+// Smooth page link transitions
+document.querySelectorAll('a[href]').forEach(a => {
+  const href = a.getAttribute('href');
+  if(href && !href.startsWith('#') && !href.startsWith('javascript') && !href.startsWith('mailto')) {
+    a.addEventListener('click', e => {
+      if(href.includes('.html') && !a.target) {
+        e.preventDefault();
+        document.body.style.opacity = '0';
+        document.body.style.transform = 'translateY(-6px)';
+        document.body.style.transition = 'opacity .25s ease, transform .25s ease';
+        setTimeout(() => window.location.href = href, 260);
+      }
+    });
+  }
+});
+// Lazy image loading
+document.querySelectorAll('img[src]').forEach(img => {
+  img.loading = 'lazy';
+  img.addEventListener('load', () => img.style.background = 'none');
+});
+</script>
+
+<!-- WhatsApp Float -->
+
+<!-- WhatsApp Float -->
+<a href="https://wa.me/447700900123?text=Hello%2C+I+am+interested+in+your+products." class="wa-float" target="_blank" aria-label="WhatsApp">
+  <span style="font-size:26px;line-height:1;">💬</span>
+</a>
+<button class="btt" id="btt" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Back t
+</body>
+</html>
